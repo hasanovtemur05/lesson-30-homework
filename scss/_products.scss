@@ -1,0 +1,98 @@
+.products{
+    padding: 30px 0px;
+    margin-top: 50px;
+  .top__creatos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+    h2{
+        color: white;
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+        color: white;
+        padding: 0px 30px 0px 0px;
+    }
+    button{
+        width: 150px;
+        display: flex;
+        // gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 25px;
+        border: none;
+        background-color: #A259FF;
+        border-radius: 20px;
+        font-size: 12px;
+        color: white;
+    }
+  }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &__card{
+        width: 100%;
+        &__img{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__info{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+@media (min-width:500px){
+    .products__card{
+        width: 48%;
+    }
+}
+@media (min-width:1024px){
+    .products{
+        h2{
+            color: white;
+            font-size: 38px;
+        }
+        p{
+            font-size: 22px;
+            color: white;
+            padding: 0px 30px 0px 0px;
+        }
+        button{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 25px;
+            border: none;
+            background-color: #A259FF;
+            border-radius: 20px;
+            font-size: 16px;
+            color: white;
+        }
+    }
+    .products__card{
+        width: 32%;
+    }
+   
+}
+@media (min-width:1500px){
+    .products{
+        &__cards{
+            justify-content: start;
+        }
+        &__card{
+            width: 24%;
+        }
+    }
+}
